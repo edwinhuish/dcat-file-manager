@@ -1,6 +1,6 @@
 <?php
 
-use Edwinhuish\DcatExt\FileLibrary\Http\Controllers;
+use Edwin\DcatFileManager\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
-Route::get('dcat-ext-file-library', Controllers\DcatExtFileLibraryController::class.'@index');
+Route::get('edwin-file-manager', Controllers\FileManager::class.'@index');
