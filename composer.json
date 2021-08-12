@@ -1,0 +1,38 @@
+{
+    "name": "edwinhuish/dcat-ext-file-library",
+    "alias": "",
+    "description": "适用于 dcat-admin 的文件管理器",
+    "type": "library",
+    "keywords": [
+        "dcat-admin",
+        "extension",
+        "file library",
+        "media library",
+        "file manager"
+    ],
+    "homepage": "https://github.com/edwinhuish/dcat-ext-file-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edwin Xu",
+            "email": "edwinhuish@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Edwinhuish\\DcatExt\\FileLibrary\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Edwinhuish\\DcatExt\\FileLibrary\\DcatExtFileLibraryServiceProvider",
+        "laravel": {
+            "providers": [
+                "Edwinhuish\\DcatExt\\FileLibrary\\DcatExtFileLibraryServiceProvider"
+            ]
+        }
+    }
+}
